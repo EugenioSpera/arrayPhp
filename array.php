@@ -84,7 +84,7 @@ echo $cores[$i];
 
 /*-------------------------------------------------------------------------------------*/
 
-//coçlocando os dados inserido em forma crescente.
+//colocando os dados inserido em forma crescente.
 echo"<br>";
 echo"<br>";
 $valores=[6,5,8,1,7,9,2];
@@ -105,6 +105,8 @@ for($i=0;$i<count($valores);$i++){
 echo $valores[$i];
 }
 
+/*-------------------------------------------------------------------------------------*/
+
 //Mostrando apenas o que não se repete nos dois arrays.
 echo"<br>";
 echo"<br>";
@@ -114,6 +116,43 @@ $diferenca = array_diff($valores,$valores2);
 foreach($diferenca as $valor){ 
 echo $valor;
 }
+
+
+/*-------------------------------------------------------------------------------------*/
+
+echo"<br>";
+echo"<br>";
+
+//Exercícios 
+
+//1
+
+$array1=[1,2,3];
+$array2=[4,5,6];
+$result= array_merge($array1,$array2);
+for ($i=0;$i<count($result);$i++){
+    echo $result[$i]."<br>"; 
+}
+
+//2
+
+echo"<br>";
+echo"<br>";
+$valores=[5,3,1,4,2,10,8,7,9];
+sort($valores);
+for($i=0;$i<count($valores);$i++){ 
+echo $valores[$i]."<br>";
+}
+
+echo"<br>";
+echo"<br>";
+
+rsort($valores);
+for($i=0;$i<count($valores);$i++){ 
+echo $valores[$i]."<br>";
+}
+
+
 
 
 
